@@ -26,7 +26,7 @@ No pressure. Just build, break, learn, and repeat.
 
 Whenever a face is detected on a webpage, blur the eyes using a thick, soft blur — like a digital privacy strip.
 
-### Learning Log 🧠
+### Learning Log 
 
 I'll keep updating this README as I learn more and add features.  
 Each step will be documented like a mini journal entry.
