@@ -1,11 +1,11 @@
-# 👁️ Eye Blur Extension – Learning in Public
+# 👁️ Eye Bar Extension – Learning in Public
 <img width="180" height="180" alt="example" src="https://github.com/user-attachments/assets/4815982a-11a5-4c08-8499-22f4dbe01b73" />
 
 
 
 ### What is this?
 
-I'm building a simple browser extension that blurs out the **eyes** on faces detected in web pages.  
+I'm building a simple browser extension that adds black bar out on the **eyes** on faces detected in web pages.  
 Think of it as a fun, weird, privacy-tinted filter for the web.
 
 ### Why?
@@ -15,7 +15,7 @@ I want to understand:
 
 - How to manipulate the DOM through an extension
 - How to run face detection in the browser
-- How to apply visual effects (like a strong Gaussian blur)
+- How to apply visual effects (like a strong Gaussian blur) -- thinking of like a black bar on top of eyes as shown in the picture.
 - How to iterate and ship small pieces of working code
 
 ### My plan:
