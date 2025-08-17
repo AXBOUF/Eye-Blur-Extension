@@ -13,7 +13,7 @@ Think of it as a fun, weird, privacy-tinted filter for the web.
 This project is my way of learning how browser extensions work — from scratch.  
 I want to understand:
 
-- How to manipulate the DOM through an extension
+- How to manipulate the DOM - not sure through an extension
 - How to run face detection in the browser
 - How to apply visual effects (like a strong Gaussian blur) -- thinking of like a black bar on top of eyes as shown in the picture.
 - How to iterate and ship small pieces of working code
