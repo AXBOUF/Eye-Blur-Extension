@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Image Replacer",
+  "version": "1.0",
+  "description": "Replaces small images and YouTube thumbnails with a custom image",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Image Replacer"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": ["test.gif"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
