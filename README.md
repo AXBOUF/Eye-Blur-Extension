@@ -1,7 +1,7 @@
-# Image Replacer Extension
+
 ![Alt text](https://media1.tenor.com/m/MMo4B6tp-GMAAAAd/job-application.gif)
 
-# 🐧 Image Replacer (Anti-Binge)
+#  Image Replacer (Anti-Binge)
 I got tired of clicking YouTube thumbnails without thinking. So I made a Chrome extension that replaces them with a dumb penguin gif pointing at job applications. That's literally it.
 
 ## What It Actually Does
