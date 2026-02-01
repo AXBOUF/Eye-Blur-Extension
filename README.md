@@ -1,38 +1,79 @@
-# 👁️ Eye Bar Extension – Learning in Public
-<img width="180" height="180" alt="example" src="https://github.com/user-attachments/assets/4815982a-11a5-4c08-8499-22f4dbe01b73" />
+# Image Replacer Extension
 
+A simple Chrome extension that replaces small images and YouTube thumbnails with a custom image for testing and learning purposes.
 
+## How it works
 
-### What is this?
+1. **General Thumbnail Detection**: Identifies small images (300x300 pixels or smaller)
+2. **YouTube Thumbnail Detection**: Specifically targets YouTube video thumbnails using multiple selectors
+3. **Image Replacement**: Replaces detected thumbnails with your custom image (`test.gif`)
+4. **Real-time**: Monitors for new images added to the page
+5. **Toggle Support**: Can restore original images when toggled off
 
-I'm building a simple browser extension that adds black bar out on the **eyes** on faces detected in web pages.  
-Think of it as a fun, weird, privacy-tinted filter for the web.
+## Installation
 
-### Why?
+1. Download or clone this repository
+2. Open Chrome and go to `chrome://extensions/`
+3. Enable "Developer mode" in the top right
+4. Click "Load unpacked" and select the extension folder
+5. The extension should appear in your extensions list
 
-This project is my way of learning how browser extensions work — from scratch.  
-I want to understand:
+## Usage
 
-- How to manipulate the DOM - not sure through an extension
-- How to run face detection in the browser
-- How to apply visual effects (like a strong Gaussian blur) -- thinking of like a black bar on top of eyes as shown in the picture.
-- How to iterate and ship small pieces of working code
+1. Navigate to any webpage with images or YouTube
+2. The extension will automatically replace:
+   - Small images (300x300 pixels or smaller) on any site
+   - YouTube video thumbnails of all sizes
+   - YouTube playlist thumbnails
+3. Click the extension icon in the toolbar to toggle the feature on/off
+4. When disabled, original images are restored
 
-### My plan:
+## Which images get replaced?
 
-No pressure. Just build, break, learn, and repeat.
+### General Websites:
+- Images with dimensions 300x300 pixels or smaller
+- Thumbnails, profile pictures, small product images
+- Excludes large images (full-size photos, banners, etc.)
 
-### What it might do (eventually):
+### YouTube Specific:
+- **All video thumbnails** (hqdefault.jpg, mqdefault.jpg, etc.)
+- **Playlist thumbnails** (grid and compact views)
+- **Video recommendation thumbnails**
+- **Search result thumbnails**
+- **Sidebar video thumbnails**
 
-Whenever a face is detected on a webpage, blur the eyes using a thick, soft blur — like a digital privacy strip.
+## Testing Examples
 
-### Learning Log 
+1. **YouTube Homepage**: All video thumbnails get replaced
+2. **YouTube Search**: Search result thumbnails get replaced
+3. **YouTube Video Page**: Related video thumbnails get replaced
+4. **Google Images**: Small thumbnails get replaced
+5. **Social Media**: Profile pictures and thumbnails get replaced
 
-I'll keep updating this README as I learn more and add features.  
-Each step will be documented like a mini journal entry.
+## Safe Testing
 
----
+This extension is designed for safe testing:
+- Only replaces small images + YouTube thumbnails
+- Preserves original image URLs for restoration
+- No network requests beyond initial page load
+- Console logging shows exactly what's being replaced
+- Easy toggle to restore everything
 
-> This is a public learning journal.  
-> If you’re curious, feel free to follow along or just drop in and see how it’s going.
+## Files
 
+- `manifest.json`: Extension configuration
+- `content.js`: Main logic for image replacement with YouTube handling
+- `popup.html`: Extension popup interface
+- `popup.js`: Popup interaction logic
+- `test.gif`: The replacement animated image
+
+## Learning Notes
+
+This extension demonstrates:
+- DOM manipulation through content scripts
+- Image element modification
+- YouTube-specific selectors and handling
+- Chrome extension development basics
+- Safe image replacement patterns
+- Toggle functionality with state preservation
+- Platform-specific targeting (YouTube)
