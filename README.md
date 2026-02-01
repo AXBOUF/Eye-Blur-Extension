@@ -1,4 +1,5 @@
 # Image Replacer Extension
+![Alt text](https://media1.tenor.com/m/MMo4B6tp-GMAAAAd/job-application.gif)
 
 A simple Chrome extension that replaces small images and YouTube thumbnails with a custom image for testing and learning purposes.
 
